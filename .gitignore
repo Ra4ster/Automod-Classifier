@@ -1,0 +1,18 @@
+# --- Dependencies ---
+node_modules/
+__pycache__/
+*.pyc
+
+# --- Large AI Models #
+safety-app/onnx_output/
+safety-app/node_modules/
+my_safety_model/
+my_safety_tokenizer/
+*.onnx
+*.bin
+*.pt
+
+# --- System/IDE Files ---
+.DS_Store
+.vscode/
+.idea/
