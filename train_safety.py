@@ -10,7 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 # https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0
 bad_dataset = load_dataset("nvidia/Aegis-AI-Content-Safety-Dataset-2.0", split="train")
-good_dataset = load_dataset("wikitext", "wikitext-2-v1", split="train[:4000]")
+good_dataset = load_dataset("Salesforce/wikitext", "wikitext-2-v1", split="train[:4000]")
 
 class SafeWrapper(torch.utils.data.Dataset):
     def __init__(self, data):
